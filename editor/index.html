@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>PenguinBuilder-editor</title>
+    <title>Makextension-editor</title>
     <script src="https://unpkg.com/blockly/blockly.min.js"></script>
 
     <script src="https://www.unpkg.com/@blockly/disable-top-blocks@0.4.7/dist/index.js"></script>
@@ -21,15 +21,11 @@
     <main>
       <div id="block-editor"></div>
 
-      <a href="https://discord.gg/b8zHUQ4Cqn" target="_blank">
-        <button>Discord</button></a
-      >
-
       <a href="../Docs"><button>Docs</button></a>
 
       <button id="Export">Export</button>
       <button id="Save">Save</button>
-      <input type="file" id="fileInput" accept=".pb" style="display: none" />
+      <input type="file" id="fileInput" accept=".mx" style="display: none" />
       <button id="Load">Load</button>
       <input
         type="text"
@@ -44,7 +40,7 @@
         placeholder="ExtensionID"
         maxlength="20"
       />
-      <input type="color" id="Color" value="#0088ff" />
+      <input type="color" id="Color" value="#9d73ff" />
       <label
         >Force Unsandboxed <input type="checkbox" id="force-unsandboxed"
       /></label>
