@@ -18,7 +18,8 @@ Blockly.Blocks['create_block'] = {
         new Blockly.FieldDropdown([
           ["block", "Block"],
           ["reporter", "Reporter"],
-          ["boolean", "boolean"],
+          ["boolean", "Boolean"],
+          ["conditional", "Conditional"],
         ]),
         "type"
       );
@@ -54,6 +55,9 @@ javascript.javascriptGenerator.forBlock['create_block'] = function(block) {
       break;
     case 'boolean':
       blockType = 'BOOLEAN';
+      break;
+    case 'conditional':
+      blockType = 'CONDITIONAL';
       break;
   }
 
